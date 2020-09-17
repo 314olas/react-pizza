@@ -1,0 +1,21 @@
+.count-badge {
+  border-radius: 30px;
+  display: inline-block;
+  min-width: 22px;
+  height: 22px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 22px;
+  transition: background-color $duration, color $duration;
+}
+
+@each $badge-name, $color in $color-theme {
+  .badge-#{$badge-name} {
+    background-color: $color;
+    @if $badge-name == 'light' {
+      color: $black;
+    } @else {
+      color: $white;
+    }
+  }
+}

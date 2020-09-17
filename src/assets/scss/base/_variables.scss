@@ -1,0 +1,17 @@
+$black: #232323;
+$yellow: #ffdf8c;
+$white: #ffffff;
+$dark-white: #f6f6f6;
+$gray-dark: #777;
+$gray: #8d8d8d;
+$orange: #fe5f1e;
+
+$color-theme: (
+  "dark": $black,
+  "light": $dark-white,
+  "danger": $orange
+);
+
+$container-width: 90%;
+
+$duration: 0.15s;
